@@ -4,8 +4,6 @@
     "strict": true,
     //Allow module detection
     "moduleDetection": "force",
-    // Treat files as modules even if it doesn't use import/export
-    "moduleDetection": "force",
     // Ignore module structure
     "module": "ESNext",
     // Target ESNext ECMAScript
