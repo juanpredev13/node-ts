@@ -1,15 +1,12 @@
-console.log("Hello World");
+import express from "express";
+import homeRoutes from "./routes/home.routes";
 
-enum Direction {
-    Up,
-    Down,
-    Left,
-    Right
-}
+const app = express();
 
-const direction = Direction.Up;
+app.use("/", homeRoutes);
 
-console.log(direction);
+const PORT = process.env.PORT || 3000;
 
-
-
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+}); 

@@ -13,7 +13,8 @@
     // Use correct ESM import behavior
     "esModuleInterop": true,
     // Disallow features that require cross-file awareness
-    "isolatedModules": true
+    "isolatedModules": true,
+    "moduleResolution": "node"
   },
   // Include all files in the src directory
   "include": ["src/**/*"],
